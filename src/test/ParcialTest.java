@@ -11,8 +11,7 @@ import logica.Parcial;
 
 
 public class ParcialTest {
-	private long p = 999998727899999L;
-	private Parcial parcial ;
+		private Parcial parcial ;
 
 	@BeforeEach
 	public void setUp() {
