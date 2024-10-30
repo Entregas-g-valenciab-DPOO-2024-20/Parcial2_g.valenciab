@@ -11,7 +11,7 @@ public class Parcial {
 	double calculoN = -b-(Math.sqrt(Math.pow(b, 2)) -(4*a*c))/2*a;
 	double discriminante = Math.pow(b, 2)-(4*a*c);
 	if (discriminante == 0){
-		double[] unaRespuesta = {calculoP, 0};
+		double[] unaRespuesta = {calculoP, -1};
 		return unaRespuesta;
 	}
 		else if (discriminante < 0) {

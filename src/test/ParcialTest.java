@@ -21,8 +21,10 @@ public class ParcialTest {
 	
 	@Test
 	public void hallarRaicesTest() throws Exception {
-		assertArrayEquals(double[] unaRespuesta = {0, 0}, this.parcial.hallarRaices(1, 2, 1));
-		assertEquals(5.0, this.parcial.hallarRaices(1, 2, 1));
+		double[] unaRespuesta = {2, -1};
+		double[] dosRespuestas = {4, 0};
+		assertArrayEquals(unaRespuesta, this.parcial.hallarRaices(1, -4, 4));
+		assertArrayEquals(dosRespuestas, this.parcial.hallarRaices(1, -4, 0));
 		assertThrows(Exception.class, () -> this.parcial.hallarRaices(3, 2, 1));
 	}
 }
